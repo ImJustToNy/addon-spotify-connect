@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:17.0.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.3.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -11,7 +11,7 @@ ARG LIBRESPOT_VERSION="0.6.0"
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
-        cargo=1.71.1-r0 \
+        cargo=1.83.0-r0 \
         git=2.40.3-r0 \
         protobuf-dev=3.21.12-r2 \
         pulseaudio-dev=16.1-r10 \
